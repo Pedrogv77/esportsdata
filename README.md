@@ -1,4 +1,4 @@
-#Esports market analysis 
+# Esports market analysis 
 
 
 ## Table of contents
