@@ -12,7 +12,7 @@ CREATE TABLE generalesportsdata (
 );
 
 LOAD DATA INFILE 'GeneralEsportData.csv'
-INTO TABLE GeneralEsportsData
+INTO TABLE generalesportsdata
 FIELDS TERMINATED BY ';'
 IGNORE 1 LINES;
 
