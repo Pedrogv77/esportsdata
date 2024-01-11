@@ -26,7 +26,7 @@ CREATE TABLE historicalesportsdata (
   FOREIGN KEY (game_title) REFERENCES generalesportsdata (game_title)
 );
 
-LOAD DATA INFILE 'HistoricalEsportsData.csv'
+LOAD DATA INFILE 'HistoricalEsportData1.csv'
 INTO TABLE historicalesportsdata
 FIELDS TERMINATED BY ';'
 IGNORE 1 LINES;
