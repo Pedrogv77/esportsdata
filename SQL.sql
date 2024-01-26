@@ -58,7 +58,7 @@ SELECT
     DATE_FORMAT(tournament_date, '%Y') AS tournament_year,
     SUM(no_tournaments) AS tournaments_p_year,
     SUM(earnings) AS earnings_p_year,
-    SUM(earnings) / SUM(no_tournaments) AS avg_tournamentprize
+    AVG(earnings) AS avg_tournamentprize
 FROM
     historicalesportsdata
 GROUP BY DATE_FORMAT(tournament_date, '%Y');
@@ -69,7 +69,7 @@ SELECT
     DATE_FORMAT(tournament_date, '%Y-%m') AS tournament_year_month,
     SUM(no_tournaments) AS tournaments_p_year_month,
     SUM(earnings) AS earnings_p_year_month,
-    SUM(earnings) / SUM(no_tournaments) AS avg_tournament_prize
+    AVG(earnings) AS avg_tournamentprize
 FROM
     historicalesportsdata
 GROUP BY DATE_FORMAT(tournament_date, '%Y-%m');
